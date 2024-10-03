@@ -1,9 +1,9 @@
-# Your Name Here
+# Caleb Egbert
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# October 3, 2024
+# Lab 04
+# Lab Section: 12
+# Sources, people worked with, help given to: TA
 # your
 # comments
 # here
@@ -92,6 +92,15 @@ min_temps = [
     17, 28, 23, 25, 23, 23, -3, -15, 19, 5,
     -1, -1, 11, 13
 ]
+max_temp_sum = 0
+min_temp_sum = 0
+for max_temp in range(0,len(max_temps)):
+    max_temp_sum = max_temps[max_temp] + max_temp_sum
+    min_temp_sum = min_temps[max_temp] + min_temp_sum
+print(max_temp_sum/len(max_temps))
+print(min_temp_sum/len(min_temps))
+
+
 
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
